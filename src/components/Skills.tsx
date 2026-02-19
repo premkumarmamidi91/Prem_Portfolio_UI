@@ -20,7 +20,7 @@ const Skills: React.FC = () => {
             <div className="skill-header">
               <span>{skill.name}</span>
               <span>{skill.level}</span>
-            </div>
+            </div>ed
             <div className="skill-bar">
               <div
                 className="skill-progress"

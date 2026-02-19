@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "../styles/Experience.css";
 
-interface Experience {
+interface Experiencedata {
   _id: string;
   company: string;
   role: string;
@@ -12,7 +12,7 @@ interface Experience {
 }
 
 const Experience: React.FC = () => {
-  const [experience, setExperience] = useState<Experience[]>([]);
+  const [experience, setExperience] = useState<Experiencedata[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {

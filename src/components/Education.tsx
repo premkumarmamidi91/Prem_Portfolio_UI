@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "../styles/Education.css";
 
-interface Education {
+interface Educationdata {
   _id: string;
   institution: string;
   degree: string;
@@ -12,7 +12,7 @@ interface Education {
 }
 
 const Education: React.FC = () => {
-  const [education, setEducation] = useState<Education[]>([]);
+  const [education, setEducation] = useState<Educationdata[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
