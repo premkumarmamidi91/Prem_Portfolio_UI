@@ -1,0 +1,71 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 18px 60px;
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center; /* FIXED */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+/* Logo */
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #38bdf8;
+  cursor: pointer;
+}
+
+/* Links */
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #e2e8f0;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+/* Hover underline animation */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #38bdf8;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Resume Button */
+.resume-btn {
+  padding: 8px 18px;
+  background: #38bdf8;
+  color: black;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.resume-btn:hover {
+  background: #0ea5e9;
+  transform: translateY(-2px);
+}

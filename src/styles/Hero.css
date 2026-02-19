@@ -1,0 +1,195 @@
+/* .hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  text-align: center;
+  padding-top: 80px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  color: white;
+}
+
+.hero-content h2 {
+  margin-top: 20px;
+  font-size: 28px;
+  color: #38bdf8;
+}
+
+.hero-content p {
+  margin-top: 20px;
+  font-size: 18px;
+  max-width: 600px;
+  margin-inline: auto;
+  color: #cbd5e1;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+}
+
+.hero-buttons button {
+  padding: 12px 25px;
+  margin: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.primary-btn {
+  background: #38bdf8;
+  color: black;
+}
+
+.primary-btn:hover {
+  background: #0ea5e9;
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.secondary-btn:hover {
+  background: #38bdf8;
+  color: black;
+} */
+
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  padding: 100px 20px 40px;
+}
+
+/* Main Layout */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  width: 100%;
+  gap: 50px;
+}
+
+/* Left Side */
+.hero-content {
+  flex: 1;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  color: white;
+}
+
+.hero-content h2 {
+  margin-top: 15px;
+  font-size: 26px;
+  color: #38bdf8;
+}
+
+.hero-content p {
+  margin-top: 20px;
+  font-size: 18px;
+  max-width: 500px;
+  color: #cbd5e1;
+}
+
+/* Skills */
+.skills {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills span {
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.skills span:hover {
+  background: #38bdf8;
+  color: black;
+}
+
+/* Buttons */
+.hero-buttons {
+  margin-top: 25px;
+}
+
+.hero-buttons button {
+  padding: 12px 25px;
+  margin-right: 15px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.primary-btn {
+  background: #38bdf8;
+  color: black;
+}
+
+.primary-btn:hover {
+  background: #0ea5e9;
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.secondary-btn:hover {
+  background: #38bdf8;
+  color: black;
+}
+
+/* Image */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #38bdf8;
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-content p {
+    margin-inline: auto;
+  }
+
+  .skills {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,14 @@
+.section-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #1d4ed8;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  line-height: 1.8;
+  font-size: 18px;
+}
